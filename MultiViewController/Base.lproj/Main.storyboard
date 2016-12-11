@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MultiViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the first view" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Woi-ql-QDG">
+                                <rect key="frame" x="63" y="60" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="288" id="caF-4N-tuI"/>
+                                    <constraint firstAttribute="height" constant="21" id="zI3-Yd-ARP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8EB-Fv-fYV">
+                                <rect key="frame" x="117" y="125" width="180" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="Eh6-MC-rvC"/>
+                                    <constraint firstAttribute="height" constant="45" id="YKf-7H-APg"/>
+                                </constraints>
+                                <state key="normal" title="Switch to the second view"/>
+                                <connections>
+                                    <segue destination="yCV-Gz-Am8" kind="show" id="k9t-yk-WHL"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8EB-Fv-fYV" firstAttribute="top" secondItem="Woi-ql-QDG" secondAttribute="bottom" constant="44" id="8O6-Bg-Uqg"/>
+                            <constraint firstItem="8EB-Fv-fYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EK7-Qk-YxT"/>
+                            <constraint firstItem="Woi-ql-QDG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KQW-lJ-lwo"/>
+                            <constraint firstItem="Woi-ql-QDG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="wGr-o3-YvY"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.739130434782609" y="34.239130434782609"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="eGg-nP-6lL">
+            <objects>
+                <viewController id="yCV-Gz-Am8" customClass="SecondViewController" customModule="MultiViewController" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nma-Mv-4kh"/>
+                        <viewControllerLayoutGuide type="bottom" id="NeK-an-dsR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xLI-pq-kLz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is the second view" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B8s-9J-Fgw">
+                                <rect key="frame" x="63" y="60" width="288" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="AXb-ur-QjW"/>
+                                    <constraint firstAttribute="height" constant="21" id="SP3-dR-CPo"/>
+                                    <constraint firstAttribute="width" constant="288" id="VhT-pA-CMY"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="288" id="dTQ-wk-sdi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4cF-c6-Ng9">
+                                <rect key="frame" x="118.66666666666669" y="125" width="177" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="177" id="Kfq-LX-p06"/>
+                                    <constraint firstAttribute="height" constant="45" id="s7j-OS-ZnT"/>
+                                </constraints>
+                                <state key="normal" title="Switch to the first View"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="9vu-9I-dmn"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4cF-c6-Ng9" firstAttribute="centerX" secondItem="xLI-pq-kLz" secondAttribute="centerX" id="5Gv-yd-UTd"/>
+                            <constraint firstItem="4cF-c6-Ng9" firstAttribute="top" secondItem="B8s-9J-Fgw" secondAttribute="bottom" constant="44" id="8kp-Q8-Zqg"/>
+                            <constraint firstItem="B8s-9J-Fgw" firstAttribute="centerX" secondItem="xLI-pq-kLz" secondAttribute="centerX" id="Urk-9c-t3h"/>
+                            <constraint firstItem="B8s-9J-Fgw" firstAttribute="top" secondItem="nma-Mv-4kh" secondAttribute="bottom" constant="40" id="bbS-du-TVZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y2G-rR-xx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="775" y="34"/>
+        </scene>
+    </scenes>
+</document>
